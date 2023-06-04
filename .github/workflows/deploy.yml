@@ -39,10 +39,10 @@ jobs:
           key:  ${{ secrets.KEY }}
           port:  ${{ secrets.PORT }}
           script: |
-               cd ~/node-cicd
+               cd ~/nodejs-cicd
                git pull origin main
                npm install
-               pm2 restart node-cicd
+               pm2 restart nodejs-cicd
             
 
 
